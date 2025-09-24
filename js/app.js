@@ -1,4 +1,3 @@
-import { createElement } from 'react';
 import { getFolders, addFolder, deleteFolder, editFolder } from './folders.js';
 import { addResource, deleteResource, editResource } from './resources.js';
 

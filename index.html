@@ -3,29 +3,42 @@
 <head>
     <meta charset="UTF-8" />
     <title>DevBox</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <main class="container">
-        <h1>DevBox</h1>
+        <header>
+            <h1>📦 DevBox</h1>
+        </header>
+
         <section>
-            <form id="folder-form">
-                <input type="text" id="folder-name" placeholder="Enter folder name" required />
-                <button type="submit">Add folder</button>
+            <h2>Add a folder</h2>
+            <form id="folderForm" class="grid">
+                <input type="text" id="folderName" placeholder="Enter folder name" required />
+                <button type="submit">Add</button>
             </form>
-            <ul id="folder-list"></ul>
         </section>
-        <section id="resources-section">
-            <h2 id="current-folder"></h2>
-            <form id="resource-form">
-                <input type="text" id="resource-name" placeholder="Enter resource name" required />
-                <input type="url" id="resource-url" placeholder="Enter resource URL" required />
-                <button type="submit">Add resource</button>
+
+        <section>
+            <h2>Add a resource</h2>
+            <form id="resourceForm" class="grid">
+                <input type="text" id="resourceName" placeholder="Enter resource name" required />
+                <input type="url" id="resourceUrl" placeholder="Enter resource URL" required />
+                <select id="resourceFolder"></select>
+                <button type="submit">Add</button>
             </form>
-            <ul id="resources"></ul>
-            <button id="back-btn">Back to folders</button>
         </section>
+
+        <section>
+            <h2>My folders</h2>
+            <div id="folderList"></div>
+        </section>
+
     </main>
-    <script src="app.js"></script>
+    <script type="module" src="js/app.js"></script>
 </body>
 </html>
