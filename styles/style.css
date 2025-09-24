@@ -1,0 +1,23 @@
+#resources-section {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+.favicon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.folder-actions, .resource-actions {
+    margin-left: 1em;
+}
